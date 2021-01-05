@@ -5,7 +5,6 @@ import Header from "./header";
 export default function App() {
   return (
     <div className="App">
-      <h1>Welcome to the linkedin clone</h1>
       {/* header */}
       <Header />
       {/* App body */}
