@@ -1,5 +1,11 @@
 import React from "react";
+
 import SearchIcon from "@material-ui/icons/Search";
+import HomeIcon from "@material-ui/icons/Home";
+import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
+import ChatIcon from "@material-ui/icons/Chat";
+import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 import "./header.css";
 import HeaderOption from "./headerOption";
 
@@ -14,8 +20,11 @@ function Header() {
         </div>
       </div>
       <div className="header-right">
-        <HeaderOption title="home" />
-        <HeaderOption title="my Network" />
+        <HeaderOption Icon={HomeIcon} title="Home" />
+        <HeaderOption Icon={SupervisorAccountIcon} title="My Network" />
+        <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
+        <HeaderOption Icon={ChatIcon} title="Chat" />
+        <HeaderOption Icon={NotificationsActiveIcon} title="Notification" />
       </div>
     </div>
   );
